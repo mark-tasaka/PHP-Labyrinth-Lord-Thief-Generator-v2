@@ -1,0 +1,992 @@
+/* html rules
+--------------------*/
+
+
+body{
+	font-family: sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+
+/* id rules
+--------------------*/
+#character_sheet{
+    width: 950px;
+    height: auto;
+	display: block;
+}
+
+
+/*DCC Warrior Generator Version 4 post data css*/
+
+#characterName{
+    position:absolute;
+    top: 105px;
+    left: 55px;
+	font-size: 0.85em;
+}
+
+#characterName2{
+    position:absolute;
+    top: 105px;
+    left: 55px;
+	font-size: 0.85em;
+}
+
+
+#gender{
+    position:absolute;
+    top: 105px;
+    left: 330px;
+	font-size: 0.85em;
+}
+
+
+#alignment{
+    position:absolute;
+    top: 180px;
+    left: 55px;
+	font-size: 0.85em;
+}
+
+
+#level{
+    position:absolute;
+    top: 105px;
+    left: 445px;
+	font-size: 0.85em;
+}
+
+
+
+#class{
+    position:absolute;
+    top: 105px;
+    left: 500px;
+	font-size: 0.85em;
+}
+
+
+#playerName{
+    position:absolute;
+    top: 180px;
+    left: 195px;
+	font-size: 0.85em;
+}
+
+
+#armourName{
+    position:absolute;
+    top: 826px;
+    left: 665px;
+	font-size: 0.65em;
+}
+
+
+
+#armourACBonus{
+    position:absolute;
+    top: 826px;
+    left: 872px;
+	font-size: 0.65em;
+}
+
+
+#armourWeight{
+    position:absolute;
+    top: 826px;
+    left: 925px;
+	font-size: 0.65em;
+}
+
+#shieldName{
+    position:absolute;
+    top: 846px;
+    left: 665px;
+	font-size: 0.65em;
+}
+
+
+
+#shieldACBonus{
+    position:absolute;
+    top: 846px;
+    left: 872px;
+	font-size: 0.65em;
+}
+
+
+#shieldWeight{
+    position:absolute;
+    top: 846px;
+    left: 925px;
+	font-size: 0.65em;
+}
+
+
+#armourAc{
+    position:absolute;
+    top: 800px;
+    left: 850px;
+	font-size: 0.8em;
+}
+
+
+
+
+#weaponsList{
+    position:absolute;
+    top: 910px;
+    left: 665px;
+	font-size: 0.6em;
+}
+
+#weaponsList2{
+    position:absolute;
+    top: 910px;
+    left: 867px;
+	font-size: 0.6em;
+}
+
+
+#weaponsList3{
+    position:absolute;
+    top: 910px;
+    left: 930px;
+	font-size: 0.6em;
+}
+
+
+
+#weaponNotes{
+    position:absolute;
+    top: 1140px;
+    left: 665px;
+	font-size: 0.5em;
+}
+
+
+
+#totalWeaponWeight{
+    position:absolute;
+    top: 1170px;
+    left: 925px;
+	font-size: 0.65em;
+}
+
+
+
+
+#totalArmourClassMod{
+    position:absolute;
+    top: 855px;
+    left: 850px;
+	font-size: 0.8em;
+}
+
+#totalArmourWeight{
+    position:absolute;
+    top: 820px;
+    left: 305px;
+	font-size: 0.5em;
+}
+
+#gearWeight{
+    position:absolute;
+    top: 832px;
+    left: 485px;
+	font-size: 0.5em;
+}
+
+#gearList{
+    position:absolute;
+    top: 335px;
+    left: 670px;
+	font-size: 0.6em;
+}
+
+#gearList2{
+    position:absolute;
+    top: 335px;
+    left: 925px;
+	font-size: 0.6em;
+}
+
+
+#totalWeightGear{
+    position:absolute;
+    top: 770px;
+    left: 925px;
+	font-size: 0.6em;
+}
+
+
+#wealth{
+    position:absolute;
+    top: 270px;
+    left: 340px;
+    font-size: 0.65em;
+    width: 250px;
+}
+
+
+
+#coinWeight{
+    position:absolute;
+    top: 352px;
+    left: 570px;
+    font-size: 0.75em;
+}
+
+#totalWeightCarried
+{
+    position:absolute;
+    top: 427px;
+    left: 436px;
+    font-size: 0.6em;
+}
+
+#turnMovement{
+    position:absolute;
+    top: 452px;
+    left: 436px;
+    font-size: 0.6em;
+}
+
+#encounterMovement{
+    position:absolute;
+    top: 427px;
+    left: 560px;
+    font-size: 0.6em;
+}
+
+#runningMovement{
+    position:absolute;
+    top: 453px;
+    left: 560px;
+    font-size: 0.6em;
+}
+
+#abilityScoreGeneration{
+    position:absolute;
+    top: 1176px;
+    left: 35px;
+    font-size: 0.5em;
+}
+
+
+
+#luckyWeapon{
+    position:absolute;
+    top: 660px;
+    left: 405px;
+    font-size: 0.8em;
+    font-size: 0.8em;
+    width: 240px;
+}
+
+
+#baseAC{
+    position:absolute;
+    top: 352px;
+    left: 222px;
+	font-size: 0.9em;
+}
+
+
+#trainedWeapon{
+    position:absolute;
+    top: 780px;
+    left: 60px;
+	font-size: 0.8em;
+    width: 260px;
+}
+
+
+#tradeGoods{
+    position:absolute;
+    top: 515px;
+    left: 360px;
+	font-size: 0.6em;
+}
+
+
+
+
+#strength{
+    position:absolute;
+    top: 510px;
+    left: 60px;
+	font-size: 1.3em;
+}
+
+
+#strengthMod{
+    position:absolute;
+    top: 510px;
+    left: 160px;
+	font-size: 0.55em;
+    width: 155px;
+}
+
+
+#dexterity{
+    position:absolute;
+    top: 555px;
+    left: 60px;
+	font-size: 1.3em;
+}
+
+#dexterityMod{
+    position:absolute;
+    top: 555px;
+    left: 160px;
+	font-size: 0.55em;
+    width: 155px;
+}
+
+
+
+#constitution{
+    position:absolute;
+    top: 602px;
+    left: 60px;
+	font-size: 1.3em;
+}
+
+#constitutionMod{
+    position:absolute;
+    top: 602px;
+    left: 160px;
+	font-size: 0.55em;
+    width: 160px;
+}
+
+
+#intelligence{
+    position:absolute;
+    top: 648px;
+    left: 60px;
+	font-size: 1.3em;
+}
+
+#intelligenceMod{
+    position:absolute;
+    top: 648px;
+    left: 160px;
+	font-size: 0.55em;
+    width: 155px;
+}
+
+
+#wisdom{
+    position:absolute;
+    top: 695px;
+    left: 60px;
+	font-size: 1.3em;
+}
+
+#wisdomMod{
+    position:absolute;
+    top: 695px;
+    left: 160px;
+	font-size: 0.55em;
+    width: 155px;
+}
+
+#charisma{
+    position:absolute;
+    top: 740px;
+    left: 60px;
+	font-size: 1.3em;
+}
+
+
+#charismaMod{
+    position:absolute;
+    top: 730px;
+    left: 160px;
+	font-size: 0.55em;
+    width: 155px;
+}
+
+#meleeHitAC0{
+    position:absolute;
+    top: 830px;
+    left: 130px;
+	font-size: 1em;
+}
+
+#meleeHitAC1{
+    position:absolute;
+    top: 830px;
+    left: 178px;
+	font-size: 1em;
+}
+
+#meleeHitAC2{
+    position:absolute;
+    top: 830px;
+    left: 226px;
+	font-size: 1em;
+}
+
+#meleeHitAC3{
+    position:absolute;
+    top: 830px;
+    left: 278px;
+	font-size: 1em;
+}
+
+#meleeHitAC4{
+    position:absolute;
+    top: 830px;
+    left: 328px;
+	font-size: 1em;
+}
+
+#meleeHitAC5{
+    position:absolute;
+    top: 830px;
+    left: 380px;
+	font-size: 1em;
+}
+
+#meleeHitAC6{
+    position:absolute;
+    top: 830px;
+    left: 430px;
+	font-size: 1em;
+}
+
+#meleeHitAC7{
+    position:absolute;
+    top: 830px;
+    left: 482px;
+	font-size: 1em;
+}
+
+#meleeHitAC8{
+    position:absolute;
+    top: 830px;
+    left: 534px;
+	font-size: 1em;
+}
+
+#meleeHitAC9{
+    position:absolute;
+    top: 830px;
+    left: 586px;
+	font-size: 1em;
+}
+
+
+
+#missileHitAC0{
+    position:absolute;
+    top: 866px;
+    left: 130px;
+	font-size: 1em;
+}
+
+#missileHitAC1{
+    position:absolute;
+    top: 866px;
+    left: 178px;
+	font-size: 1em;
+}
+
+#missileHitAC2{
+    position:absolute;
+    top: 866px;
+    left: 226px;
+	font-size: 1em;
+}
+
+#missileHitAC3{
+    position:absolute;
+    top: 866px;
+    left: 278px;
+	font-size: 1em;
+}
+
+#missileHitAC4{
+    position:absolute;
+    top: 866px;
+    left: 328px;
+	font-size: 1em;
+}
+
+#missileHitAC5{
+    position:absolute;
+    top: 866px;
+    left: 380px;
+	font-size: 1em;
+}
+
+#missileHitAC6{
+    position:absolute;
+    top: 866px;
+    left: 430px;
+	font-size: 1em;
+}
+
+#missileHitAC7{
+    position:absolute;
+    top: 866px;
+    left: 482px;
+	font-size: 1em;
+}
+
+#missileHitAC8{
+    position:absolute;
+    top: 866px;
+    left: 534px;
+	font-size: 1em;
+}
+
+#missileHitAC9{
+    position:absolute;
+    top: 866px;
+    left: 586px;
+	font-size: 1em;
+}
+
+#level1Spells{
+    position:absolute;
+    top: 940px;
+    left: 228px;
+	font-size: 1em;
+}
+
+
+#level2Spells{
+    position:absolute;
+    top: 940px;
+    left: 278px;
+	font-size: 1em;
+}
+
+
+#level3Spells{
+    position:absolute;
+    top: 940px;
+    left: 328px;
+	font-size: 1em;
+}
+
+#level4Spells{
+    position:absolute;
+    top: 940px;
+    left: 378px;
+	font-size: 1em;
+}
+
+#level5Spells{
+    position:absolute;
+    top: 940px;
+    left: 428px;
+	font-size: 1em;
+}
+
+#level6Spells{
+    position:absolute;
+    top: 940px;
+    left: 478px;
+	font-size: 1em;
+}
+
+#level7Spells{
+    position:absolute;
+    top: 940px;
+    left: 528px;
+	font-size: 1em;
+}
+
+#turnUndeadHD1{
+    position:absolute;
+    top: 1019px;
+    left: 188px;
+	font-size: 1em;
+}
+
+
+#turnUndeadHD2{
+    position:absolute;
+    top: 1019px;
+    left: 231px;
+	font-size: 1em;
+}
+
+#turnUndeadHD3{
+    position:absolute;
+    top: 1019px;
+    left: 276px;
+	font-size: 1em;
+}
+
+#turnUndeadHD4{
+    position:absolute;
+    top: 1019px;
+    left: 323px;
+	font-size: 1em;
+}
+
+#turnUndeadHD5{
+    position:absolute;
+    top: 1019px;
+    left: 365px;
+	font-size: 1em;
+}
+
+#turnUndeadHD6{
+    position:absolute;
+    top: 1019px;
+    left: 411px;
+	font-size: 1em;
+}
+
+#turnUndeadHD7{
+    position:absolute;
+    top: 1019px;
+    left: 454px;
+	font-size: 1em;
+}
+
+#turnUndeadHD8{
+    position:absolute;
+    top: 1019px;
+    left: 496px;
+	font-size: 1em;
+}
+
+#turnUndeadHD9{
+    position:absolute;
+    top: 1019px;
+    left: 548px;
+	font-size: 1em;
+}
+
+#turnUndeadHD10{
+    position:absolute;
+    top: 1019px;
+    left: 593px;
+	font-size: 1em;
+}
+
+#saveBreath{
+    position:absolute;
+    top: 524px;
+    left: 373px;
+	font-size: 1.3em;
+}
+
+#savePoisonDeath{
+    position:absolute;
+    top: 574px;
+    left: 373px;
+	font-size: 1.3em;
+}
+
+#savePetrify{
+    position:absolute;
+    top: 624px;
+    left: 373px;
+	font-size: 1.3em;
+}
+
+#saveWands{
+    position:absolute;
+    top: 674px;
+    left: 373px;
+	font-size: 1.3em;
+}
+
+#saveSpells{
+    position:absolute;
+    top: 724px;
+    left: 373px;
+	font-size: 1.3em;
+}
+
+#classAbilities{
+    position:absolute;
+    top: 1076px;
+    left: 45px;
+	font-size: 0.7em;
+}
+
+
+
+
+
+
+#speed{
+    position:absolute;
+    top: 420px;
+    left: 790px;
+	font-size: 1.6em;
+}
+
+
+#xpNextLevel{
+    position:absolute;
+    top: 197px;
+    left: 583px;
+	font-size: 0.7em;
+}
+
+
+#armourClass{
+    position:absolute;
+    top: 260px;
+    left: 150px;
+	font-size: 1.5em;
+}
+
+
+#armourClassBase{
+    position:absolute;
+    top: 260px;
+    left: 190px;
+	font-size: 1.5em;
+}
+
+
+
+#armourACCheckPen{
+    position:absolute;
+    top: 915px;
+    left: 320px;
+	font-size: 0.9em;
+}
+
+#armourACSpeedPen{
+    position:absolute;
+    top: 939px;
+    left: 320px;
+	font-size: 0.9em;
+}
+
+#fumbleDie{
+    position:absolute;
+    top: 962px;
+    left: 320px;
+	font-size: 0.9em;
+}
+
+#hitPoints{
+    position:absolute;
+    top: 420px;
+    left: 220px;
+	font-size: 1.5em;
+}
+
+#reflex{
+    position:absolute;
+    top: 350px;
+    left: 720px;
+	font-size: 1.6em;
+}
+
+#fort{
+    position:absolute;
+    top: 308px;
+    left: 785px;
+	font-size: 1.6em;
+}
+
+#will{
+    position:absolute;
+    top: 350px;
+    left: 865px;
+	font-size: 1.6em;
+}
+
+#criticalDieTable{
+    position:absolute;
+    top: 227px;
+    left: 270px;
+    font-size: 0.85em;
+}
+
+/*
+#deedDie{
+    position:absolute;
+    top: 370px;
+    left: 270px;
+    font-size: 0.9em;
+}
+*/
+#initiative{
+    position:absolute;
+    top: 227px;
+    left: 385px;
+    font-size: 0.9em;
+}
+
+#threatRange{
+    position:absolute;
+    top: 227px;
+    left: 550px;
+    font-size: 0.9em;
+}
+
+#attackBonus{
+    position:absolute;
+    top: 227px;
+    left: 450px;
+    font-size: 0.9em;
+}
+
+#actionDice{
+    position:absolute;
+    top: 227px;
+    left: 50px;
+    font-size: 0.85em;
+}
+
+
+#birthAugur{
+    position:absolute;
+    top: 640px;
+    left: 60px;
+    font-size: 0.8em;
+    width: 280px;
+}
+
+#languages{
+    position:absolute;
+    top: 750px;
+    left:  405px;
+    font-size: 0.8em;
+    width: 240px;
+}
+
+
+#melee{
+    position:absolute;
+    top: 519px;
+    left: 125px;
+	font-size: 1.2em;
+}
+
+
+#range{
+    position:absolute;
+    top: 558px;
+    left: 125px;
+	font-size: 1.2em;
+}
+
+
+
+#meleeDamage{
+    position:absolute;
+    top: 519px;
+    left: 175px;
+	font-size: 1.2em;
+}
+
+
+#rangeDamage{
+    position:absolute;
+    top: 558px;
+    left: 175px;
+	font-size: 1.2em;
+}
+
+
+
+
+#backstab{
+    position:absolute;
+    top: 686px;
+    left: 505px;
+    font-size: 0.8em;
+}
+
+#sneakSilently{
+    position:absolute;
+    top: 716px;
+    left: 505px;
+    font-size: 0.8em;
+}
+
+#hideInShadows{
+    position:absolute;
+    top: 746px;
+    left: 505px;
+    font-size: 0.8em;
+}
+
+#pickPocket{
+    position:absolute;
+    top: 776px;
+    left: 505px;
+    font-size: 0.8em;
+}
+
+#climb{
+    position:absolute;
+    top: 806px;
+    left: 505px;
+    font-size: 0.8em;
+}
+
+#pickLock{
+    position:absolute;
+    top: 836px;
+    left: 505px;
+    font-size: 0.8em;
+}
+
+#findTrap{
+    position:absolute;
+    top: 866px;
+    left: 505px;
+    font-size: 0.8em;
+}
+
+#disableTrap{
+    position:absolute;
+    top: 896px;
+    left: 505px;
+    font-size: 0.8em;
+}
+
+#forgeDoc{
+    position:absolute;
+    top: 926px;
+    left: 505px;
+    font-size: 0.8em;
+}
+
+#disguiseSelf{
+    position:absolute;
+    top: 956px;
+    left: 505px;
+    font-size: 0.8em;
+}
+
+#readLanguages{
+    position:absolute;
+    top: 986px;
+    left: 505px;
+    font-size: 0.8em;
+}
+
+#handlePoison{
+    position:absolute;
+    top: 1016px;
+    left: 505px;
+    font-size: 0.8em;
+}
+
+#castSpellScroll{
+    position:absolute;
+    top: 1055px;
+    left: 505px;
+    font-size: 0.8em;
+}
