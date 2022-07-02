@@ -36,7 +36,7 @@
     include 'php/nameSelect.php';
     include 'php/gender.php';
     include 'php/movementRate.php';
-    include 'php.thiefSkills.php';
+    include 'php/thiefSkills.php';
     
 
 
@@ -255,7 +255,7 @@
         
         $armourACBonus = getArmour($armour)[1];
         $armourWeight = getArmour($armour)[2];
-
+/*
         if(isset($_POST['theCheckBoxShield']) && $_POST['theCheckBoxShield'] == 1) 
         {
             $shield = 1;
@@ -264,14 +264,14 @@
         {
             $shield = 0;
         }
-        
-    
+        */
+    /*
         $shieldName = getShield($shield)[0];
         
         $shieldACBonus = getShield($shield)[1];
-        $shieldWeight = getShield($shield)[2];
+        $shieldWeight = getShield($shield)[2];*/
 
-       $totalAcDefense = $armourACBonus + $shieldACBonus;
+       $totalAcDefense = $armourACBonus;
 
        $baseArmourClass = 9 - $dexterityMod;
 
@@ -326,7 +326,7 @@
         $totalWeaponWeight += getWeapon($select)[2];
     }
 
-    $armourAndWeapomWeight = $totalWeaponWeight + $armourWeight + $shieldWeight;
+    $armourAndWeapomWeight = $totalWeaponWeight + $armourWeight;
     
         $gearArray = array();
         $gearNames = array();
@@ -386,8 +386,8 @@
         $saveSpells = saveSpells($level);
         $saveSpells -= $wisdomMod;
 
-        $primeReq = primeReq($wisdom);
-        //$secondAttack = secondAttack($level);
+        $primeReq = primeReq($dexterity);
+        $thiefMessage = thiefMessage($level);
 
         $strengthDescription = strengthModifierDescription($strength);
         $dexterityDescription = dexterityModifierDescription($dexterity);
@@ -435,26 +435,15 @@
         $missileHitAC8 = getThacoCheck($missileHitAC8);
         $missileHitAC9 = $missileHitAC0  - 9;
         $missileHitAC9 = getThacoCheck($missileHitAC9);
-/*
-        $level1Spells = spellsLevel1($level);
-        $level2Spells = spellsLevel2($level);
-        $level3Spells = spellsLevel3($level);
-        $level4Spells = spellsLevel4($level);
-        $level5Spells = spellsLevel5($level);
-        $level6Spells = spellsLevel6($level);
-        $level7Spells = spellsLevel7($level);
 
-        $turnUndeadHD1 = undeadHD1($level);
-        $turnUndeadHD2 = undeadHD2($level);
-        $turnUndeadHD3 = undeadHD3($level);
-        $turnUndeadHD4 = undeadHD4($level);
-        $turnUndeadHD5 = undeadHD5($level);
-        $turnUndeadHD6 = undeadHD6($level);
-        $turnUndeadHD7 = undeadHD7($level);
-        $turnUndeadHD8 = undeadHD8($level);
-        $turnUndeadHD9 = undeadHD9($level);
-        $turnUndeadHD10 = undeadHD10($level);*/
-    
+        $pickLock = getPickLocks($level);
+        $findTrap = getFindTrap($level);
+        $pickPockets = getPickPockets($level);
+        $moveSilently = getMoveSilently($level);
+        $climbWall = getClimbWall($level);
+        $hideShadow = getHideShadows($level);
+        $hearNoise = getHearNoise($level);
+
     
     ?>
 
@@ -796,38 +785,6 @@
                 echo $armourWeight;
             ?>
         </span>
-
-                      
-       <span id="shieldName">
-           <?php
-
-           if($shield === 1)
-           {
-                echo $shieldName;
-           }
-           ?>
-        </span>
-              
-       <span id="shieldACBonus">
-           <?php
-           if($shield === 1)
-           {
-                echo $shieldACBonus;
-           }
-           ?>
-        </span>
-              
-       <span id="shieldWeight">
-           <?php
-           
-           if($shield === 1)
-           {
-                echo $shieldWeight;
-           }
-           ?>
-        </span>
-        
-
        
         <span id="weaponsList">
            <?php
@@ -981,8 +938,55 @@
         <span id="classAbilities">
             <?php
                 echo $primeReq;
+                echo "Backstab: +4 attack bonus; x2 damage.";
+                echo "</br></br>" . $thiefMessage;
             ?>
         </span>
+
+        <span id="pickLock">
+            <?php
+                echo $pickLock . "%";
+            ?>
+        </span>
+
+        
+        <span id="findTrap">
+            <?php
+                echo $findTrap . "%";
+            ?>
+        </span>
+        
+        
+        <span id="pickPockets">
+            <?php
+                echo $pickPockets . "%";
+            ?>
+        </span>
+        
+        <span id="moveSilently">
+            <?php
+                echo $moveSilently . "%";
+            ?>
+        </span>
+        
+        <span id="climbWall">
+            <?php
+                echo $climbWall . "%";
+            ?>
+        </span>
+        
+        <span id="hideShadow">
+            <?php
+                echo $hideShadow . "%";
+            ?>
+        </span>
+        
+        <span id="hearNoise">
+            <?php
+                echo $hearNoise;
+            ?>
+        </span>
+
 
        
 	</section>

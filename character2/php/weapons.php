@@ -119,27 +119,28 @@ function weaponNotes($value)
 }
 
 
-    function getRandomWeapons()
+
+
+function getRandomWeapons()
+{
+   
+    $weaponsArray = array(1, 2, 3, 4, 5, 8, 10, 12, 13, 14, 16, 17, 18, 19, 20, 23, 24, 25, 26, 27, 28, 29, 30, 32);
+
+    //shuffle $weaponsArray
+    shuffle($weaponsArray); 
+
+    $numberOfWeapons = rand (2, 5);
+
+    $weaponsHas = array();
+
+    for($j = 0; $j < $numberOfWeapons; ++$j)
     {
-       
-        $weaponsArray = array(2, 14, 15, 20, 25, 28);
-    
-        //shuffle $weaponsArray
-        shuffle($weaponsArray); 
-    
-        $numberOfWeapons = rand (2, 4);
-    
-        $weaponsHas = array();
-    
-        for($j = 0; $j < $numberOfWeapons; ++$j)
-        {
-            $weapon = $weaponsArray[$j];
-            array_push($weaponsHas, $weapon);
-        }
-    
-        return $weaponsHas;
+        $weapon = $weaponsArray[$j];
+        array_push($weaponsHas, $weapon);
     }
 
+    return $weaponsHas;
+}
 
 
 

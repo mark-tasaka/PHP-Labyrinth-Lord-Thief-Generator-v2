@@ -1,6 +1,6 @@
 <?php
 
-/*Cleric */
+/*Thief */
 
 function getHitPoints($level, $conMod)
 {
@@ -10,12 +10,12 @@ function getHitPoints($level, $conMod)
     {
         for($i = 0; $i < $level; ++$i)
         {
-            $levelHP = rand(3, 6);
+            $levelHP = rand(1, 4);
             $levelHP += $conMod;
     
-            if($levelHP < 3)
+            if($levelHP < 2)
             {
-                $levelHP = 3;
+                $levelHP = 2;
             }
     
             $hitPoints += $levelHP;
@@ -26,19 +26,19 @@ function getHitPoints($level, $conMod)
     {
         for($i = 0; $i < 10; ++$i)
         {
-            $levelHP = rand(3, 6);
+            $levelHP = rand(1, 4);
             $levelHP += $conMod;
     
-            if($levelHP < 3)
+            if($levelHP < 2)
             {
-                $levelHP = 3;
+                $levelHP = 2;
             }
     
             $hitPoints += $levelHP;
     
         }
 
-        $levelTenPlusHP = ($level - 9);
+        $levelTenPlusHP = ($level - 9) * 2;
 
         $hitPoints += $levelTenPlusHP;
 
@@ -66,11 +66,11 @@ function saveBreathAttack($level)
     }
     else if($level >= 13 && $level <= 16)
     {
-        return 8;
+        return 10;
     }
     else
     {
-        return 6;
+        return 8;
     }
 
 }
@@ -80,28 +80,80 @@ function savePoisonDeath($level)
 {
     if($level <= 4)
     {
-        return 11;
+        return 14;
     }
     else if($level >= 5 && $level <= 8)
     {
-        return 9;
+        return 12;
     }
     else if($level >= 9 && $level <= 12)
     {
-        return 7;
+        return 10;
     }
     else if($level >= 13 && $level <= 16)
     {
-        return 3;
+        return 8;
     }
     else
     {
-        return 2;
+        return 6;
     }
 }
 
 
 function savePetrify($level)
+{
+    if($level <= 4)
+    {
+        return 13;
+    }
+    else if($level >= 5 && $level <= 8)
+    {
+        return 11;
+    }
+    else if($level >= 9 && $level <= 12)
+    {
+        return 9;
+    }
+    else if($level >= 13 && $level <= 16)
+    {
+        return 7;
+    }
+    else
+    {
+        return 5;
+    }
+
+}
+
+
+function saveWands($level)
+{
+    if($level <= 4)
+    {
+        return 15;
+    }
+    else if($level >= 5 && $level <= 8)
+    {
+        return 13;
+    }
+    else if($level >= 9 && $level <= 12)
+    {
+        return 11;
+    }
+    else if($level >= 13 && $level <= 16)
+    {
+        return 9;
+    }
+    else
+    {
+        return 7;
+    }
+
+}
+
+
+function saveSpells($level)
 {
     if($level <= 4)
     {
@@ -126,76 +178,24 @@ function savePetrify($level)
 
 }
 
-
-function saveWands($level)
-{
-    if($level <= 4)
-    {
-        return 12;
-    }
-    else if($level >= 5 && $level <= 8)
-    {
-        return 10;
-    }
-    else if($level >= 9 && $level <= 12)
-    {
-        return 8;
-    }
-    else if($level >= 13 && $level <= 16)
-    {
-        return 4;
-    }
-    else
-    {
-        return 4;
-    }
-
-}
-
-
-function saveSpells($level)
-{
-    if($level <= 4)
-    {
-        return 15;
-    }
-    else if($level >= 5 && $level <= 8)
-    {
-        return 12;
-    }
-    else if($level >= 9 && $level <= 12)
-    {
-        return 9;
-    }
-    else if($level >= 13 && $level <= 16)
-    {
-        return 6;
-    }
-    else
-    {
-        return 5;
-    }
-
-}
-
 function primeReq($abilityScore)
 {
     
     if($abilityScore >= 3 && $abilityScore <=5)
         {
-            return "-10% Experience Point Adjustment (Prime Requisite)</br>";
+            return "-10% Experience Point Adjustment (Prime Requisite)</br></br>";
         }
     else if($abilityScore >= 6 && $abilityScore <=8)
         {
-            return "-5% Experience Point Adjustment (Prime Requisite)</br>";
+            return "-5% Experience Point Adjustment (Prime Requisite)</br></br>";
         }
     else if($abilityScore >= 13 && $abilityScore <=15)
         {
-            return "+5% Experience Point Adjustment (Prime Requisite)</br>";
+            return "+5% Experience Point Adjustment (Prime Requisite)</br></br>";
         }
     else if($abilityScore >= 16 && $abilityScore <=18)
         {
-            return "+10% Experience Point Adjustment (Prime Requisite)</br>";
+            return "+10% Experience Point Adjustment (Prime Requisite)</br></br>";
         }
     else
         {

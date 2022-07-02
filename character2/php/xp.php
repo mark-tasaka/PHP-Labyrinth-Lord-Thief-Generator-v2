@@ -8,39 +8,39 @@ function getXPNextLevel ($level)
     switch ($level) 
     {
         case "1":
-            $xpNext = "1,565";
+            $xpNext = "1,251";
           break;
 
         case "2":
-            $xpNext = "3,125";
+            $xpNext = "2,501";
         break;
         
         case "3":
-            $xpNext = "6,251";
+            $xpNext = "5,001";
         break;
         
         case "4":
-            $xpNext = "12,501";
+            $xpNext = "10,001";
         break;
         
         case "5":
-            $xpNext = "25,001";
+            $xpNext = "20,001";
         break;
         
         case "6":
-            $xpNext = "50,001";
+            $xpNext = "40,001";
         break;        
 
         case "7":
-            $xpNext = "100,001";
+            $xpNext = "80,001";
         break;
                 
         case "8":
-            $xpNext = "200,001";
+            $xpNext = "160,001";
         break;
                 
         case "9":
-            $xpNext = "300,001";
+            $xpNext = "280,001";
         break;
                 
         case "10":
@@ -48,39 +48,39 @@ function getXPNextLevel ($level)
         break;
                 
         case "11":
-            $xpNext = "500,001";
+            $xpNext = "520,001";
         break;
                 
         case "12":
-            $xpNext = "600,001";
+            $xpNext = "640,001";
         break;
                 
         case "13":
-            $xpNext = "700,001";
+            $xpNext = "760,001";
         break;
                 
         case "14":
-            $xpNext = "800,001";
+            $xpNext = "880,001";
         break;
                 
         case "15":
-            $xpNext = "900,001";
-        break;
-                
-        case "16":
             $xpNext = "1,000,001";
         break;
                 
+        case "16":
+            $xpNext = "1,120,001";
+        break;
+                
         case "17":
-            $xpNext = "1,100,001";
+            $xpNext = "1,240,001";
         break;
                 
         case "18":
-            $xpNext = "1,200,001";
+            $xpNext = "1,360,001";
         break;
                 
         case "19":
-            $xpNext = "1,300,001";
+            $xpNext = "1,480,001";
         break;
                 
         case "20":
