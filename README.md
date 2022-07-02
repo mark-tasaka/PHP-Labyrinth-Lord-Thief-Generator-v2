@@ -3,6 +3,17 @@ The Labyrinth Lord Thief Character Generator Version 2 is the second iteration o
 
 -------------
 
+A live version of the Labyrinth Lord Thief Character Generator Version 2 is available at:
+
+https://www.oldschooladventures.org/ll/classes/thief/
+
+------------
+
+
+Update 1.01: 2022-07-02
+
+Updates to thief.php, thief.css, classDetails.php, gear.php, thiefSkills.php, weapons.php, and xp.php.  A link to the live Labyrinth Lord Thief Character Generator Version 2 has been added.
+
 
 Initial commit: 2022-07-01
 
